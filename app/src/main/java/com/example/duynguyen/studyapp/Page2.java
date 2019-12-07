@@ -36,7 +36,7 @@ public class Page2 extends AppCompatActivity {
         // Get the application context
         mContext = getApplicationContext();
         // Get the activity
-        mActivity = Main2Activity.this;
+        mActivity = Page2.this;
 
         // Get the widgets reference from XML layout
         mRelativeLayout = (RelativeLayout) findViewById(R.id.rl);
