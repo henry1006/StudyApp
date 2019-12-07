@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.example.duynguyen.studyapp.R;
 
-public class Main2Activity extends AppCompatActivity {
+public class Page2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
