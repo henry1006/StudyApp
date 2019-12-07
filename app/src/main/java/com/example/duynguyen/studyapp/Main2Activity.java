@@ -1,4 +1,4 @@
-package com.example;
+package com.example.duynguyen.studyapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
