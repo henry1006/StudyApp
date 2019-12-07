@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">StudyApp</string>
+    <string name="welcome_to_studyapp">Welcome to StudyApp</string>
+    <string name="start">Start</string>
 </resources>
