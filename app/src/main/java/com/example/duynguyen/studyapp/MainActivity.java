@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openActivity2() {
-        Intent intent = new Intent(this, Main2Activity.class);
+        Intent intent = new Intent(this, Page2.class);
         startActivity(intent);
     }
 }
