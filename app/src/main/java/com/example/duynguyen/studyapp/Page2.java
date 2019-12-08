@@ -2,6 +2,7 @@ package com.example.duynguyen.studyapp;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -22,6 +23,8 @@ public class Page2 extends AppCompatActivity {
     ArrayList<Integer> userItems = new ArrayList<>(); //items checked
     private RecyclerView cities;
     private RecyclerView.Adapter adapter;
+    private Intent intent;
+    //private ArrayList<City> cities2;
 
 
     @Override
@@ -36,14 +39,14 @@ public class Page2 extends AppCompatActivity {
 
         //LIST
         final ArrayList<City> cities = initCities();
+        //cities2 = cities;
+        List(cities);
 
-        this.cities = (RecyclerView) findViewById(R.id.cities);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
-        this.cities.setLayoutManager(mLayoutManager);
 
-        adapter = new CityAdapter(cities);
-        this.cities.setAdapter(adapter);
         //END OF LIST
+
+
+
 
         //FILTER
         button.setOnClickListener(new View.OnClickListener() {
@@ -75,7 +78,7 @@ public class Page2 extends AppCompatActivity {
                         }
 //                        itemSelected.setText(item); //This line prints the selected checkboxes.(in the middle)
                         String str[] = item.split(", "); //every filter selection
-                        ArrayList<City> cities2 = initCities();
+                        ArrayList<City> cities2 = new ArrayList<City>();
                         for(int i = 0; i < cities.size(); i++) {
                             for (int j = 0; j < str.length; j++){
                                 if (!cities2.contains(cities.get(i))){
@@ -85,7 +88,9 @@ public class Page2 extends AppCompatActivity {
                                 }
                             }
                         }
+                        List(cities2);
                         //Show cities2. (?)
+
                     }
                 });
 
@@ -112,6 +117,17 @@ public class Page2 extends AppCompatActivity {
             }
 
         });
+    }
+
+    //List function
+    public void List(ArrayList<City> cities){
+        //intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        this.cities = (RecyclerView) findViewById(R.id.cities);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
+        this.cities.setLayoutManager(mLayoutManager);
+
+        adapter = new CityAdapter(cities);
+        this.cities.setAdapter(adapter);
     }
 
     private ArrayList<City> initCities() {
