@@ -4,4 +4,16 @@
     <string name="start">Start</string>
     <string name="name">(name)</string>
     <string name="textview">TextView</string>
+    <string name="todo">TODO</string>
+
+    <string-array name="features">
+        <item>Bathroom</item>
+        <item>Quiet</item>
+        <item>Whiteboard</item>
+        <item>Loud</item>
+        <item>Printer</item>
+        <item>Bright Light</item>
+        <item>Computer</item>
+        <item>Food</item>
+    </string-array>
 </resources>

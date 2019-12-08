@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_x="50px">
 
     <TextView
         android:id="@+id/name"
@@ -11,11 +12,14 @@
         android:layout_height="61dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
         android:text="@string/name"
         android:textSize="20sp"
         android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/image"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/description"
@@ -37,12 +41,13 @@
         android:layout_height="150dp"
         android:layout_marginTop="15dp"
         android:adjustViewBounds="true"
-        android:contentDescription="TODO"
+        android:contentDescription="@string/todo"
         android:maxWidth="150dp"
         android:maxHeight="150dp"
         android:scaleType="fitStart"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 </android.support.constraint.ConstraintLayout>
