@@ -23,10 +23,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+//        //delete later
+//        button = (Button) findViewById(R.id.button2);
+//        button.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v) {
+//                openLocation1();
+//            }
+//        });
     }
 
     public void openActivity2() {
         Intent intent = new Intent(this, Page2.class);
         startActivity(intent);
     }
+
+    //delete later
+//    public void openLocation1(){
+//        Intent i = new Intent(this, Location1.class);
+//        startActivity(i);
+//    }
+
 }
