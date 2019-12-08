@@ -15,19 +15,4 @@
         android:checked
             Boolean. "true" if the item is checked by default.
     -->
-
-    <item
-        android:id="@+id/bold"
-        android:title="Bold Text"
-        app:showAsAction="never"
-        android:orderInCategory="4"
-        android:checkable="true"
-        />
-    <item
-        android:id="@+id/italic"
-        android:title="Italic Text"
-        app:showAsAction="never"
-        android:orderInCategory="5"
-        android:checkable="true"
-        />
 </menu>

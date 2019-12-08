@@ -13,6 +13,7 @@
         android:layout_marginLeft="8dp"
         android:text="@string/name"
         android:textSize="20sp"
+        android:visibility="visible"
         app:layout_constraintStart_toEndOf="@+id/image"
         tools:layout_editor_absoluteY="0dp" />
 
@@ -25,6 +26,7 @@
         android:layout_marginBottom="8dp"
         android:text="@string/textview"
         android:textSize="20sp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/image"
         tools:text="(description)" />
@@ -35,11 +37,12 @@
         android:layout_height="150dp"
         android:layout_marginTop="15dp"
         android:adjustViewBounds="true"
+        android:contentDescription="TODO"
         android:maxWidth="150dp"
         android:maxHeight="150dp"
         android:scaleType="fitStart"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="TODO" />
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
