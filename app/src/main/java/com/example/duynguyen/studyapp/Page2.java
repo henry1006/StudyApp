@@ -13,8 +13,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.support.v7.widget.Toolbar;
 
-import com.example.duynguyen.studyapp.R;
-
 public class Page2 extends AppCompatActivity {
 
     private Context mContext;
