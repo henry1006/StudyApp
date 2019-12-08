@@ -109,6 +109,7 @@ public class Page2 extends AppCompatActivity {
                             userItems.clear();
                             itemSelected.setText("");
                         }
+                        List(cities);
                     }
                 });
 
