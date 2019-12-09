@@ -12,7 +12,7 @@
         android:layout_height="61dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="2dp"
         android:text="@string/name"
         android:textSize="20sp"
         android:visibility="visible"
@@ -37,9 +37,9 @@
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="15dp"
+        android:layout_width="149dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="2dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/todo"
         android:maxWidth="150dp"
@@ -49,5 +49,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:visibility="visible" />
 </android.support.constraint.ConstraintLayout>
