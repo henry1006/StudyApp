@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity"
@@ -7,17 +7,13 @@
     android:layout_height="match_parent"
     android:theme="@android:style/Theme.NoTitleBar"
     android:animateLayoutChanges="false"
-   >
+    android:orientation="vertical"
+    >
 
 
 
 
 
-    <TextView
-        android:id="@+id/tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true" />
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -33,11 +29,7 @@
             android:id="@+id/button2"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Map" /><Button
-            android:id="@+id/button"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="Filter" />
+            android:text="Back to List" />
     </LinearLayout></android.support.v7.widget.Toolbar>
 
     />
@@ -55,40 +47,36 @@
     <!--            app:popupTheme="@style/AppTheme.PopupOverlay" />-->
 
     <!--    </com.google.android.material.appbar.AppBarLayout>-->
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@id/toolbar2"
-        android:layout_alignRight="@id/toolbar2"
-        android:layout_marginTop="250px"
-        android:text="Select" />
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@id/toolbar2"
-        android:layout_alignRight="@id/toolbar2"
-        android:layout_marginTop="550px"
-        android:text="Select" />
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@id/toolbar2"
-        android:layout_alignRight="@id/toolbar2"
-        android:layout_marginTop="850px"
-        android:text="Select" />
-
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/cities"
-        android:layout_width="600px"
-        android:layout_height="520dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="55dp" />
-</RelativeLayout>
+
+    <TextView
+        android:id="@+id/busy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="100dp"
+        android:text="Busy"
+        android:textSize="36sp" />
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:text="I'll go here" />
+</LinearLayout>
