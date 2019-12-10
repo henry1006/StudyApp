@@ -64,8 +64,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_marginLeft="100dp"
+        android:layout_marginLeft="20dp"
         android:text="Busy"
+        android:textColor="#6B0019"
         android:textSize="36sp" />
     <TextView
         android:id="@+id/tv"

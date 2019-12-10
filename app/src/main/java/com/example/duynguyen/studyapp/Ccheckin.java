@@ -33,6 +33,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -86,6 +87,7 @@ public class Ccheckin extends AppCompatActivity {
 
                 editor.putString("Cafe",          (String) button1.getText());
                 editor.commit();
+                Toast.makeText(getApplicationContext(),"We updated how busy your location is!",Toast.LENGTH_SHORT).show();
 
                 openMaps();
             }
@@ -98,6 +100,7 @@ public class Ccheckin extends AppCompatActivity {
 
                 editor.putString("Cafe",          (String) button2.getText());
                 editor.commit();
+                Toast.makeText(getApplicationContext(),"We updated how busy your location is!",Toast.LENGTH_SHORT).show();
 
                 openMaps();
             }
@@ -111,6 +114,7 @@ public class Ccheckin extends AppCompatActivity {
 
                 editor.putString("Cafe",          (String) button3.getText());
                 editor.commit();
+                Toast.makeText(getApplicationContext(),"We updated how busy your location is!",Toast.LENGTH_SHORT).show();
 
                 openMaps();
             }
@@ -124,6 +128,7 @@ public class Ccheckin extends AppCompatActivity {
 
                 editor.putString("Cafe",          (String) button4.getText());
                 editor.commit();
+                Toast.makeText(getApplicationContext(),"We updated how busy your location is!",Toast.LENGTH_SHORT).show();
 
                 openMaps();
             }

@@ -30,14 +30,14 @@
         android:layout_height="wrap_content"
         android:gravity="end">
         <Button
-            android:id="@+id/button2"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="Map" /><Button
             android:id="@+id/button"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Filter" />
+            android:text="Filter" /><Button
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Map View" />
     </LinearLayout></android.support.v7.widget.Toolbar>
 
     />
