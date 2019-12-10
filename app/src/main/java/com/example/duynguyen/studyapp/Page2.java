@@ -119,15 +119,7 @@ public class Page2 extends AppCompatActivity {
 
         });
 //     CHECK IN / OUT
-        btn_check = (Button) findViewById(R.id.btn_check);
 
-        btn_check.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), PopActivity.class);
-                startActivity(i);
-            }
-        });
     }
 
     //List function

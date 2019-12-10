@@ -1,10 +1,13 @@
 package com.example.duynguyen.studyapp;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,15 +19,17 @@ public class CityAdapter extends RecyclerView.Adapter<CityAdapter.ViewHolder> {
 
     private ArrayList<City> cities;
 
+
+
     public CityAdapter(ArrayList<City> cities) {
         this.cities = cities;
     }
+
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = (View) LayoutInflater.from(parent.getContext()).inflate(R.layout.item_city, parent, false);
-
         return new ViewHolder(v);
     }
 
@@ -34,6 +39,13 @@ public class CityAdapter extends RecyclerView.Adapter<CityAdapter.ViewHolder> {
 
         holder.name.setText(city.getName());
         holder.description.setText(city.getDescription());
+        holder.checkin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(view.getContext(), PopActivity.class);
+                view.getContext().startActivity(i);
+            }
+        });
 
         Picasso.get().load(city.getImageURL()).into(holder.image);
     }
@@ -52,6 +64,7 @@ public class CityAdapter extends RecyclerView.Adapter<CityAdapter.ViewHolder> {
         public final TextView name;
         public final TextView description;
         public final ImageView image;
+        public final Button checkin;
 
         public ViewHolder(View view) {
             super(view);
@@ -59,6 +72,7 @@ public class CityAdapter extends RecyclerView.Adapter<CityAdapter.ViewHolder> {
             name = view.findViewById(R.id.name);
             description = view.findViewById(R.id.description);
             image = view.findViewById(R.id.image);
+            checkin = view.findViewById(R.id.btn_checkinout);
         }
     }
 }

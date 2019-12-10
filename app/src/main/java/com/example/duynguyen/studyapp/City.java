@@ -10,6 +10,7 @@ public class City {
         this.name = name;
         this.description = description;
         this.imageURL = imageURL;
+
     }
 
     public String getName() {
