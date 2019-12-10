@@ -28,7 +28,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="end">
-        <Button
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:layout_weight="5"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:scaleType="fitStart"
+            app:srcCompat="@mipmap/ic_launcher_round" /><Button
             android:id="@+id/button"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
