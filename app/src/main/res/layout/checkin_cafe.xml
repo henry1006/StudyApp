@@ -57,27 +57,29 @@
         android:layout_centerInParent="true"
         android:layout_marginLeft="0dp"
         android:text="After you arrive, how busy is the Cafe?"
-        android:textSize="20sp" />
+        android:layout_marginTop="40dp"
+        android:textColor="#6B0019"
+        android:textSize="28sp" />
 
 
     <Button
         android:id="@+id/button1"
         android:layout_width="400dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:text="Almost Empty" />
     <Button
         android:id="@+id/button2"
         android:layout_width="400dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:text="Not Too Busy" />
     <Button
         android:id="@+id/button3"
         android:layout_width="400dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:text="Moderately Busy" />
     <Button
     android:id="@+id/button4"
     android:layout_width="400dp"
-    android:layout_height="40dp"
+    android:layout_height="50dp"
     android:text="Currently Packed" />
 </LinearLayout>
