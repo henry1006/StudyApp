@@ -25,7 +25,7 @@ public class Page2 extends AppCompatActivity {
     private RecyclerView.Adapter adapter;
     private Intent intent;
     //private ArrayList<City> cities2;
-
+    Button btn_check;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,6 +117,16 @@ public class Page2 extends AppCompatActivity {
                 dialog.show();
             }
 
+        });
+//     CHECK IN / OUT
+        btn_check = (Button) findViewById(R.id.btn_check);
+
+        btn_check.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), PopActivity.class);
+                startActivity(i);
+            }
         });
     }
 
